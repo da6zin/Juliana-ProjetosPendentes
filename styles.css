@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    background-color: #04496D;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header .profile {
+    display: flex;
+    align-items: center;
+}
+.header .profile-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.search-container {
+    margin-top: 70px; /* Adjust margin to account for fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+#search-button {
+    padding: 10px;
+    background-color: #004466;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.deny-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.highlight {
+    background-color: yellow;
+}
+
+/* Estilos para a sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px; /* Ajustado de 60px para 100px para adicionar 40px a mais */
+    box-shadow: -3px 0 5px rgba(0,0,0,0.2);
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-button {
+    width: 42px; /* Defina a largura desejada */
+    height: 42px; /* Defina a altura desejada */
+    background-color: transparent; /* Se você não quiser cor de fundo */
+    border: none; /* Remova a borda se necessário */
+    cursor: pointer; /* Mude o cursor para pointer ao passar sobre o botão */
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.menu-button img {
+    width: 100%; /* Certifique-se de que a imagem ocupe todo o botão */
+    height: auto; /* Mantém a proporção da imagem */    
+}
